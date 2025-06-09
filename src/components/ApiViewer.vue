@@ -21,7 +21,7 @@
                 <h3>Cronologia API</h3>
                 <span class="toggle-icon">
                     <img
-                        :src="'/src/assets/images/chevron-down-solid.svg'"
+                        :src="chevronDownIcon"
                         :style="{
                             transform: isHistoryOpen
                                 ? 'rotate(180deg)'
@@ -48,7 +48,7 @@
                             class="remove-button"
                         >
                             <img
-                                :src="'/src/assets/images/x-solid.svg'"
+                                :src="xIcon"
                                 width="12"
                                 height="12"
                                 alt="chevron"
@@ -94,6 +94,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import JsonTree from '@/components/JsonTree.vue';
+import chevronDownIcon from '@/assets/images/chevron-down-solid.svg';
+import xIcon from '@/assets/images/x-solid.svg';
 
 const apiUrl = ref('');
 const data = ref(null);
