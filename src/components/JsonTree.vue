@@ -4,7 +4,7 @@
             <div class="node-header" @click="toggleNode('array')">
                 <span class="toggle-icon">
                     <img
-                        :src="'/src/assets/images/chevron-down-solid.svg'"
+                        :src="chevronDownIcon"
                         :style="{
                             transform: isExpanded('array')
                                 ? 'rotate(90deg)'
@@ -36,7 +36,7 @@
             <div class="node-header" @click="toggleNode('object')">
                 <span class="toggle-icon">
                     <img
-                        :src="'/src/assets/images/chevron-down-solid.svg'"
+                        :src="chevronDownIcon"
                         :style="{
                             transform: isExpanded('object')
                                 ? 'rotate(90deg)'
@@ -76,6 +76,7 @@
 <script setup lang="ts">
 import { isArray, isObject } from 'lodash-es';
 import { ref } from 'vue';
+import chevronDownIcon from '@/assets/images/chevron-down-solid.svg';
 
 const props = defineProps<{
     data: unknown;
