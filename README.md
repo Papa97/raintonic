@@ -19,3 +19,9 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Tecnologie utilizzate
+
+-   Vue3 con TypeScript e composition API per il frontend
+-   Netlify per la pubblicazione
+-   Icone scaricate da FontAwesome
